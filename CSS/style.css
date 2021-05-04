@@ -10,5 +10,11 @@ html {
     font-family: 'Source Serif Pro', serif;
     font-size: 20px;
     text-shadow: 1px 1px 1px rgb(194, 193, 193);
+    resize: both;
+    overflow: auto;
+    background-image: url("../images/landscape.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
