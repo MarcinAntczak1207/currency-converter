@@ -15,3 +15,8 @@
     font-weight: bold;
     text-shadow: none;
 }
+
+.container__result {
+    font-size: 25px;
+    text-align: center;
+}

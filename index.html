@@ -29,14 +29,19 @@
                 <legend class="form__legend">Dane</legend>
                 <p>
                     <label>
-                        <span class="form__labelText">Kwota w €:</span> <input class="form__field js-form__amount"
-                            required type="number" min="0" step="any">
+                        <span class="form__labelText">Kwota w zł*:</span> <input placeholder="Wpisz kwotę"
+                            class="form__field js-form__amount" required type="number" min="0" step="any">
                     </label>
                 </p>
                 <p>
                     <label>
-                        <span class="form__labelText">Aktualny kurs:</span> <input class="form__field js-form__rate"
-                            required type="number" min="0" max="100" step="any" value="4.55">
+                        <span class="form__labelText">Waluta:</span> 
+                        <select class="form__field js-form__currency">
+                            <option value="EUR">Euro</option>
+                            <option value="USD">Dolar amerykański</option>
+                            <option value="GBP">Funt brytyjski</option>
+                            <option value="CHF">Frank szwajcarski</option>
+                        </select>
                     </label>
                 </p>
             </fieldset>
@@ -44,7 +49,7 @@
                 <button class="form__button js-form__button">Przelicz</button>
             </p>
         </form>
-        <p class="container__header">Kwota w zł wynosi: <strong class="js-container__result"></strong></p>
+        <p class="container__result js-container__result"></p>
     </div>
 </body>
 
